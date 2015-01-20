@@ -1,4 +1,4 @@
-package com.example
+package com.daikeshi
 
 import akka.actor.{ActorSystem, Props}
 import akka.io.IO
@@ -13,7 +13,7 @@ object WeeklyCore extends App {
   implicit val system = ActorSystem("weekly-core-actor-system")
 
   // create and start our service actor
-  val service = system.actorOf(Props[WeeklyServiceActor], "demo-service")
+  val service = system.actorOf(Props[WeeklyServiceActor], "weekly-service")
 
   implicit val timeout = Timeout(5.seconds)
   // start a new HTTP server on port 8080 with our service actor as the handler
