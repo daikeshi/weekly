@@ -1,4 +1,4 @@
-package com.daikeshi
+package com.daikeshi.weekly
 
 import spray.http.DateTime
 

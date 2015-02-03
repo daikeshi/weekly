@@ -1,4 +1,4 @@
-package com.daikeshi
+package com.daikeshi.weekly
 
 import scala.util.{Success, Failure}
 import scala.concurrent.duration._
