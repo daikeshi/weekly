@@ -37,7 +37,7 @@ class UserTaskSpec extends Specification {
       count should be_>(0L)
     }
     "create new record" in new AutoRollback {
-      val created = UserTask.create(username = "MyString")
+      val created = UserTask.create(1L, 1L, "MyString")
       created should not beNull
     }
     "save a record" in new AutoRollback {
@@ -56,4 +56,3 @@ class UserTaskSpec extends Specification {
   }
 
 }
-        
